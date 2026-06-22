@@ -1,0 +1,13 @@
+{
+  "baseline_accuracy": 0.6176,
+  "finetuned_accuracy": 0.6176,
+  "improvement": 0.0,
+  "test_set_size": 34,
+  "label_map": {
+    "hype": 0,
+    "genuine_comment": 1,
+    "fan_war": 2,
+    "stream": 3
+  },
+  "model": "distilbert-base-uncased"
+}

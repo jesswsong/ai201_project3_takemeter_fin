@@ -1,0 +1,10 @@
+# Secrets — never commit
+.env
+secrets.json
+groq_key.txt
+
+# Colab downloads (keep the committed copies in repo root)
+*.ipynb_checkpoints/
+
+# OS
+.DS_Store
