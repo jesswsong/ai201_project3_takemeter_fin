@@ -92,6 +92,7 @@ Even if y'all dont help...this a.r.m.y is gonna help ya cause i really like Blac
 
 **Hyperparameter decision:** 
 I initially trained for 3 epochs following the default setup, but validation loss was still decreasing at that point, so I extended training to 15 epochs to find the true optimum. Reviewing the training lxog, the model was largely stagnant for the first 6 epochs — validation accuracy was stuck at 0.394 — before jumping to 0.667 at epoch 7. However, from epoch 11 onward, training loss continued to fall while validation loss began rising, a clear sign of overfitting. Since epoch 11 produced the lowest validation loss and highest validation accuracy, I re-trained for 11 epochs. I then reduced `warmup_steps` from 50 to 15, since the small dataset (~154 training samples) meant 50 warmup steps spanned nearly 5 full epochs before meaningful learning began. With the lower warmup, the model peaked earlier and higher — reaching 0.84 validation accuracy at epoch 8. I therefore set `num_train_epochs=8` as the final configuration, aligning training length with the best checkpoint and avoiding unnecessary overfitting.
+
 ---
 
 ## Baseline
