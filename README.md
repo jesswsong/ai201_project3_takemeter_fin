@@ -222,3 +222,9 @@ The model learned to identify `stream` and `hype` well — both classes have str
 - *What I directed the AI to do:* I shared my training logs (epoch-by-epoch training loss, validation loss, and accuracy) and asked Claude to diagnose what was happening and suggest hyperparameter changes.
 - *What it produced:* An analysis identifying the slow warmup as the cause of the stagnant first epochs, and recommendations to reduce `warmup_steps`, lower `num_train_epochs`, and increase `weight_decay`.
 - *What I changed or overrode:* I applied the warmup and epoch changes but kept `weight_decay` at its original value. I also made the final epoch count decision myself based on re-running the training and observing where validation loss bottomed out.
+
+---
+
+## Demo video
+
+https://drive.google.com/file/d/1ymNEKouzVk462iB4S1KYRfBhn3q7SJ7Q/view?usp=sharing
